@@ -2,7 +2,8 @@ import "./App.css";
 import useFetch from "./useFetch";
 
 function App() {
-  const BASE_URL = "https://reqres.in/api/users/";
+  //const BASE_URL = "https://reqres.in/api/users/";
+  const BASE_URL = "https://inshortsapi.vercel.app/news?category=all";
   const { data: users, loading, error } = useFetch(BASE_URL);
   return (
     <div className="App">
